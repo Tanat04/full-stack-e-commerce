@@ -1,11 +1,9 @@
 module.exports = {
-  parserOptions: {
-    ecmaVersion: 2015,
-    sourceType: 'module',
-  },
   root: true,
-  extends: [],
+  extends: ['plugin:@next/next/recommended', '@payloadcms'],
   ignorePatterns: ['**/payload-types.ts'],
-  plugins: [],
-  rules: {},
+  plugins: ['prettier'],
+  rules: {
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
+  },
 }
