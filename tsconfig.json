@@ -27,7 +27,11 @@
       "react": [
         "./node_modules/@types/react"
       ]
-    }
+    },
+    "types": [
+      "express",
+      "express-serve-static-core"
+    ]
   },
   "include": [
     "**/*.ts",
